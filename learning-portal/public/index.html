@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал обучения YK</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="status-bar" id="statusBar">
+        <div class="loader"></div>
+        <span>Запуск системы...</span>
+    </div>
+
+    <div class="container" id="app">
+        <!-- Контент будет загружен динамически -->
+    </div>
+
+    <script src="/app.js"></script>
+    <script>
+        // Инициализация при загрузке
+        document.addEventListener('DOMContentLoaded', function() {
+            checkServerStatus();
+        });
+    </script>
+</body>
+</html>
